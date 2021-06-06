@@ -1,25 +1,40 @@
-import logo from './logo.svg';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  // Link,
+  // NavLink,
+  // BrowserRouter,
+} from "react-router-dom";
+// import ReactDOM from 'react-dom';
+import MainPage from './components/pages/mainpage';
+import CreatePost from "./components/pages/createpost";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="navbar">
+        <div className="links">
+          <a href="/mainpage">Main Page</a>
+          <a href="/createpost">Create Posts</a>
+        </div>
+      </div>
+
+      <Router>
+        <Route path="/" exact component={MainPage} />
+        <Route path="/mainpage" component={MainPage} />
+        <Route path="/createpost" component={CreatePost} />
+      </Router>
+
+      <div className="footer">
+        <p>Copyright © 2021 Ibrahim Mustapha, Inc. All rights reserved</p>
+      </div>
+    </>
   );
 }
+
+
+
 
 export default App;
