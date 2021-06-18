@@ -7,6 +7,7 @@ body {
   margin: 0;
   background: #f1f1f1;
   font-family: 'Mukta', sans-serif;
+  font-size: 20px;
 }
 
 .navbar {
@@ -103,15 +104,27 @@ button {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
-  margin-left: 7%;
-  width: 70%;
+  width: 100%;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
+.blogs {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.post-card {
+  padding: 30px;
+}
+
 .articles {
-  margin-left: 7%;
   margin-top: 15px;
-  font-size: 34px;
+  font-size: 42px;
+  font-weight: bold;
 }
 
 /* Clear floats after the columns */
@@ -140,7 +153,33 @@ button {
   font-size: 18px;
 }
 
+.fff {
+  margin-top: 5%;
+}
+
 input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=password], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
   border: 1px solid #ccc; /* Gray border */
