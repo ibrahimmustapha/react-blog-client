@@ -101,6 +101,9 @@ button {
 
 /* Add a card effect for articles */
 .card {
+  display: grid;
+  grid-template-columns: 300px 300px 300x;
+  grid-template-rows: auto;
   background-color: white;
   padding: 20px;
   margin-top: 20px;
@@ -132,6 +135,12 @@ button {
   content: "";
   display: table;
   clear: both;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300x;
+  grid-template-rows: auto;
 }
 
 /* .ppp {

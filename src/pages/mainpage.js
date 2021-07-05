@@ -17,7 +17,7 @@ function MainPage() {
     return (
       <div className="blogs"> 
         <h1 className="articles">Blogs</h1>
-        <div className="">
+        <div className="grid-container">
             {postList.map((val, key) => {
                 return (
                   <div className="row" key={key}>

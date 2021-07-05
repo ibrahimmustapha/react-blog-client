@@ -34,9 +34,6 @@ function CreatePost() {
             name="firstname"
             placeholder="Your username.."
           />
-          {/* <h5>Upload Blog Photo</h5>
-          <input type="file" name="image-file" /><br/><br/> */}
-
           <label for="title">Title </label>
           <input
             onChange={(e) => {
